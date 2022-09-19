@@ -8,7 +8,7 @@ new_name = input("Введите имя: ").capitalize()
 if new_name == "Вячеслав":
     print("Привет,", new_name)
 else:
-    print("Имя не существует")
+    print("Нет такого имени")
 
 print()
 
