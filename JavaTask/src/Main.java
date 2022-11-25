@@ -11,8 +11,7 @@ public class Main {
 
         System.out.println("Введите число:");
         int number = console.nextInt();
-        Numbers.checkNum(number);
-
+        if (num > 7) System.out.println("Привет");
 
         System.out.println("Введите элементы массива. Его длина равна "+ number +": ");
         int[] array = new int[number];
