@@ -7,6 +7,7 @@ public class Main {
         System.out.println("Введите имя:");
         String name = console.nextLine();
         Human man = new Human(name);
+        man.checkName();
 
         System.out.println("Введите число:");
         int num = console.nextInt();
