@@ -19,8 +19,10 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i] = console.nextInt();
         }
-
         System.out.println("Элементы массива кратные 3:");
-        Numbers.multipleOf3(array);
+        for (int i : array) {
+            if (i % 3 == 0)
+                System.out.print(i + " ");
+        }
     }
 }
