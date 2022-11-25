@@ -10,12 +10,12 @@ public class Main {
         man.checkName();
 
         System.out.println("Введите число:");
-        int num = console.nextInt();
-        Numbers.checkNum(num);
+        int number = console.nextInt();
+        Numbers.checkNum(number);
 
 
-        System.out.println("Введите элементы массива. Его длина равна "+ num +": ");
-        int[] array = new int[num];
+        System.out.println("Введите элементы массива. Его длина равна "+ number +": ");
+        int[] array = new int[number];
         for (int i = 0; i < array.length; i++) {
             array[i] = console.nextInt();
         }
