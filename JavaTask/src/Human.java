@@ -5,6 +5,14 @@ public class Human {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void checkName() {
         String result = "";
         if (name.equals("Вячеслав")) {
