@@ -14,14 +14,14 @@ public class Human {
     }
 
     public void checkName() {
-        String result = "";
+        String message = "";
         if (name.equals("Вячеслав")) {
-            result = "Привет, " + name;
+            message = "Привет, " + name;
         } else if (name.equals("вячеслав")) {
-            result = "Пожалуйста, введите имя с заглавной буквы";
+            message = "Пожалуйста, введите имя с заглавной буквы";
         } else {
-            result = "Нет такого имени";
+            message = "Нет такого имени";
         }
-        System.out.println(result);
+        System.out.println(message);
     }
 }
