@@ -11,7 +11,9 @@ public class Main {
 
         System.out.println("Введите число:");
         int number = console.nextInt();
-        if (num > 7) System.out.println("Привет");
+        if (num > 7) {
+            System.out.println("Привет");
+        }
 
         System.out.println("Введите элементы массива. Его длина равна "+ number +": ");
         int[] array = new int[number];
@@ -20,8 +22,9 @@ public class Main {
         }
         System.out.println("Элементы массива кратные 3:");
         for (int i : array) {
-            if (i % 3 == 0)
+            if (i % 3 == 0) {
                 System.out.print(i + " ");
+            }
         }
     }
 }
