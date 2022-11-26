@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("Введите число:");
         int number = console.nextInt();
-        if (num > 7) {
+        if (number > 7) {
             System.out.println("Привет");
         }
 
@@ -26,5 +26,6 @@ public class Main {
                 System.out.print(i + " ");
             }
         }
+        console.close();
     }
 }
