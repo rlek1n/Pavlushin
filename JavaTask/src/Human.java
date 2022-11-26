@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Human {
     private String name;
 
@@ -14,14 +16,18 @@ public class Human {
     }
 
     public void checkName() {
-        String message = "";
-        if (name.equals("Вячеслав")) {
-            message = "Привет, " + name;
-        } else if (name.equals("вячеслав")) {
-            message = "Пожалуйста, введите имя с заглавной буквы";
-        } else {
-            message = "Нет такого имени";
+        Scanner scan = new Scanner(System.in);
+        while (true) {
+            if (name.equals("Вячеслав")) {
+                System.out.println("Привет, " + name);
+                break;
+            } else if (name.equals("вячеслав")) {
+                System.out.println("Пожалуйста, введите имя с заглавной буквы");
+            } else {
+                System.out.println("Нет такого имени");
+            }
+            setName(scan.nextLine());
         }
-        System.out.println(message);
+        scan.close();
     }
 }
